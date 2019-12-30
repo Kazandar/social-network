@@ -1,0 +1,32 @@
+@import "../../styles/variables";
+
+.nav_bar{
+  grid-area: nav-bar;
+  background-color: $side-bar-bg-color;
+
+  .menu_icon_container{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+
+    .menu_icon{
+      fill: $menu-icon-color;
+      width: 25px;
+      margin-top: -40px;
+      transition: all linear 500ms;
+    }
+  }
+
+  .menu_icon_container:first-child{
+    .menu_icon{
+      margin-top: 0;
+    }
+  }
+
+  .menu_icon_container:hover{
+    .menu_icon{
+      fill: $hover-item-color;
+      transition: all linear 300ms;
+    }
+  }
+}
