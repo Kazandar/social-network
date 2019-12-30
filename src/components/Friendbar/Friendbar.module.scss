@@ -1,0 +1,23 @@
+@import "../../styles/variables";
+
+.friend_bar{
+  grid-area: friend-bar;
+  background-color: $side-bar-bg-color;
+
+  .friend_item_container {
+    display: flex;
+    justify-content: center;
+
+    .friend_item{
+      color: red;
+      font-size: 150px;
+      margin-top: -85px;
+    }
+  }
+
+  .friend_item_container:first-child{
+    .friend_item{
+      margin-top: -10px;
+    }
+  }
+}
