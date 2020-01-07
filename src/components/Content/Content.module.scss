@@ -1,0 +1,6 @@
+@import "../../styles/variables";
+
+.content {
+  grid-area: content;
+  background-color: $content-bg-color;
+}
