@@ -1,25 +1,21 @@
 import React from 'react';
 import cls from './Profile.module.scss'
+import AddPost from '../AddPost/AddPost';
+import Brief from '../Brief/Brief';
+import Content from '../Content/Content';
+import Grid from '../Grid/Grid';
 
 const Profile = () => (
-    <div className={cls.profile}>
-        <img src="https://pbs.twimg.com/media/EAeHVoWXYAAkdbZ.jpg" alt="Картинка профиля" className={cls.main_img}/>
-        <div className={cls.avatar_container}>
-            <img
-                className={cls.avatar}
-                src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a7/a78e396b243ab73602a1aa3e1622e4fc7e52cb65_full.jpg"
-                alt="Аватарка пользователя"/>
+    <Content>
+        <div className={cls.profile}>
+            <Brief/>
+            <Grid>
+                <div>[Старые посты]</div>
+                <AddPost/>
+                <div>[Старые посты]</div>
+            </Grid>
         </div>
-        <div className={cls.user_info_container}>
-            <div className={cls.full_name}>James Spiegel</div>
-            <div className={cls.address}>San Francisco, CA</div>
-        </div>
-        <div>
-            <div>Мои посты</div>
-            <div>Новый пост</div>
-            <div>[Старые посты]</div>
-        </div>
-    </div>
+    </Content>
 );
 
 export default Profile;
