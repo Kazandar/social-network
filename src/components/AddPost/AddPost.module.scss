@@ -2,9 +2,9 @@
 
 
 .add_post_container{
-  margin-top: 15px;
   width: 620px;
   background-color: white;
+  border-radius: 5px;
 
   .new_post{
     position: relative;
@@ -20,8 +20,10 @@
       position: absolute;
       top: 22px;
       left: 70px;
-      font-size: 15px;
+      line-height: 20px;
+      font-size: 14px;
       transition: 200ms linear;
+      color: $text-color;
     }
 
     .new_post_form{
@@ -32,6 +34,10 @@
       padding-left: 70px;
       padding-top: 40px;
       border-bottom: 1px solid $content-bg-color;
+      color: $text-color;
+      line-height: 20px;
+      font-size: 14px;
+      border-radius: 5px;
     }
 
     .new_post_form:focus{
@@ -39,7 +45,8 @@
       border-bottom: 1px solid orange;
 
       + .label{
-        font-size: 10px;
+        font-size: 11px;
+        line-height: 11.8px;
         transition: 200ms linear;
       }
     }
